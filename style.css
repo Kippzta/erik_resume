@@ -1,0 +1,78 @@
+header h1 {
+    margin-bottom: 50px;
+}
+
+header {
+    background-color: #252424;
+    padding: 50px;
+    text-align: center;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+
+main {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 0px;
+
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    -webkit-text-fill-color: crimson;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-container {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 20px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 20px auto;
+    -webkit-text-fill-color: black;
+}
+
+.before-git {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px 20px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 20px auto;
+    ;
+    -webkit-text-fill-color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.footer-content p,
+.footer-content a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    background: #000000;
+    border-radius: 20px;
+    padding: 32px 20px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    margin: 20px auto;
+    color: #000000;
+    text-align: center;
+}

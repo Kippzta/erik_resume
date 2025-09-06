@@ -5,32 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Erik Rehnberg</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 </head>
 
 <body>
     <header>
-        <h1>Erik Rehnberg</h1>
-        <p> Welcome to my resume!</p>
-        <img src="" alt="">
-        <!-- Lägg till bild här på mig -->
+        <div class="header-container">
+            <h1>Erik Rehnberg</h1>
+            <img src="KorkBirthday.jpg" alt="Picture of Erik Rehnberg"
+                style="width:200px; height:auto; border-radius:50%;">
+            <p> Welcome to my simple resume!</p>
+        </div>
     </header>
     <main>
-        <section>
+        <section class="about-container">
             <h2>About Me</h2>
             <p>I'm a simple guy at the age of 27, located in Linköping <br>
                 with my girlfriend and stepson.
                 I've always had a passion for tech and gaming <br>
                 but also for making/listening to music, and of course my latest interest which is breaking new PB's in
                 the gym! <br>
-                I've lived in this city for 11 years now <br>
+                <img src="NeverGiveUp.jpg" alt="picture of NeverGiveUp" style="width:50%; border-radius: 12px;"> (I
+                never give up!) <br>
+                I've lived in this city for 11 years now
                 but in a near future i'm hoping to move to Norrköping for more culture and music
                 . <br>
+            </p>
 
+        </section>
+
+        <section class="before-git">
             <h5>Life before Git</h5>
             <p> I didn't really have any prior knowledge of programming or version control systems. <br>
-                I was introduced to Git on this hackaton in Värnamo and now I really don't recognize myself anymore</p>
-                <!-- lägg till bild -->
+                I was introduced to Git on this hackaton in Värnamo and now I really don't recognize myself anymore.</p>
+            <div class="slideshow">
+                <img id="slideshow-img" src="Frisk.jpg" alt="Before Git 1" style="width:100%; border-radius: 12px;">
+            </div>
         </section>
 
     </main>
@@ -38,12 +49,24 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-        <footer>
-            <p>&copy; 2025 Erik Rehnberg</p>
+    <footer>
+        <div class="footer-content">
             <a href="https://github.com/Kippzta" target="_blank" aria-label="GitHub Profile">
                 <img src="github-mark-white.png" alt="GitHub Icon" style="width:32px; height:32px;">GitHub
             </a>
-        </footer>
-</body>
+            <p>&copy; 2025 Erik Rehnberg</p>
+        </div>
+    </footer>
+    <script>
+        const images = ["Frisk.jpg", "ErkHT.jpg"];
+        let current = 0;
+        const imgElement = document.getElementById("slideshow-img");
 
-</html>
+        setInterval(() => {
+            current = (current + 1) % images.length;
+            imgElement.src = images[current];
+        }, 10000); 
+        </script>
+</body >
+
+</html >
